@@ -53,7 +53,7 @@ services:
       # For multi-domain setups set FRONTEND_URL in .env
       FRONTEND_URL:   ${FRONTEND_URL:-*}
       DB_PATH:        /data/pipeline.db
-      OLLAMA_URL:     ${OLLAMA_URL:-http://127.0.0.1:11434}
+      OLLAMA_URL:     ${OLLAMA_URL:-http://172.17.0.1:11434}
       OLLAMA_MODEL:   ${OLLAMA_MODEL:-qwen2.5-coder:3b}
       OLLAMA_TIMEOUT: ${OLLAMA_TIMEOUT:-120000}
       GROP_API_KEY:   ${GROP_API_KEY:-}
